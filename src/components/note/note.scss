@@ -1,0 +1,77 @@
+.note {
+  color: black;
+  border: 1px solid black;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  max-width: 260px;
+  word-break: break-all;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  &__controls {
+    display: flex;
+    gap: 10px;
+
+    button:hover {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    color: #fff;
+    justify-content: center;
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  &__value {
+    color: #fff;
+  }
+
+  &__info-item {
+    position: relative;
+    min-height: 20px;
+    color: #fff;
+    background-color: black;
+  }
+
+  &__input {
+    position: absolute;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    color: #fff;
+    caret-color: red;
+    overflow: hidden;
+  }
+
+  &__input::selection {
+    background-color: black;
+  }
+
+  .hash {
+    color: #fff;
+    background-color: blue;
+  }
+
+  &__tag {
+    color: #fff;
+    background-color: blue;
+    border-radius: 3px;
+    padding: 1px 3px;
+    margin-right: 3px;
+  }
+}
